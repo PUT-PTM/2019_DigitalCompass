@@ -247,11 +247,6 @@ float head(int16_t a1, int16_t a2, int16_t a3, int16_t m1, int16_t m2, int16_t m
 	vectori temp_m = {m1, m2, m3};
 	vectori a = {a1, a2, a3};
 
-//    // subtract offset (average of min and max) from magnetometer readings
-//    temp_m.x -= ((int32_t)m_min.x + m_max.x) / 2;
-//    temp_m.y -= ((int32_t)m_min.y + m_max.y) / 2;
-//    temp_m.z -= ((int32_t)m_min.z + m_max.z) / 2;
-
     // compute E and N
     vectorf E;
     vectorf N;
@@ -375,8 +370,7 @@ int main(void)
 
 		  lcd_setup();
 		  lcd_clear();
-		  //convert_float(heading_text, heading2);
-		  //lcd_draw_text(0, 0 * 6, heading_text);
+
 		  lcd_draw_text(0, 0 * 10, text);
 		  lcd_draw_text(1, 0 * 6, text2);
 		  lcd_copy();

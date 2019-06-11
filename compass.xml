@@ -9,8 +9,8 @@
 <!ATTLIST board id CDATA #REQUIRED>
 ]>
 <targetDefinitions>
-  <board id="akcelerometr_test4">
-    <name>akcelerometr_test4</name>
+  <board id="compass">
+    <name>compass</name>
     <dbgIF>SWD</dbgIF>
     <dbgDEV>ST-Link</dbgDEV>
     <mcuId>stm32f407vgtx</mcuId>
