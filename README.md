@@ -10,7 +10,7 @@ Main modules used:
 - LSM303D 3-axis accelerometer + magnetometer IMU 6DoF I2C/SPI,  
 - Nokia 5110 84x48px LCD display.  
 
-The used methodology assumed to get the readings of all 3 axes of the magnetometer, use specific mathematic formulas to convert magnetic field into compass heading, and display all the data on the display screen.
+The used methodology assumed to get the readings of all 3 axes of the magnetometer, use specific mathematic formulas to convert magnetic field into compass heading, and display all the data on the display screen. The magnetometer is connected via I2C, while the screen is connected via SPI.
 
 ## Tools
 Main tools used:
